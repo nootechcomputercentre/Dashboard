@@ -72,10 +72,12 @@ function openDetail(cat) {
 
     newTab.document.write(`
         <h1>${data.title}</h1>
-        <img src="${data.image}" style="width:100%">
+        <img src="${data.image}" style="width:100%" 
+             onerror="this.src='https://via.placeholder.com/400'">
         <br><br>
         <button onclick="window.close()">Close</button>
     `);
 }
+
 
 render();
